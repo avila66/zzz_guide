@@ -1,5 +1,28 @@
 [
-  { "id": "ellen", "nombre": "Ellen Joe", "rango": "s", "elemento": "hielo", "especialidad": "ataque", "faccion": "Victoria Housekeeping" },
+  {
+    "id": "ellen",
+    "nombre": "Ellen Joe",
+    "rango": "s",
+    "elemento": "hielo",
+    "especialidad": "ataque",
+    "faccion": "Victoria Housekeeping",
+    "guia": {
+      "valoraciones": { "Shiyu Defense": "[NOTA]", "Deadly Assault": "[NOTA]" },
+      "puntosFuertes": ["[Ventaja principal]", "[Otra ventaja]"],
+      "puntosDebiles": ["[Desventaja]"],
+      "wEngines": ["[W-Engine exclusivo]", "[Alternativa]"],
+      "set4": "[Set 4 piezas]",
+      "set2": "[Set 2 piezas]",
+      "ranura4": "[Stat]",
+      "ranura5": "[Stat]",
+      "ranura6": "[Stat]",
+      "equipo": [
+        { "rol": "Aturdidor", "nombre": "[Agente]" },
+        { "rol": "Apoyo", "nombre": "[Agente]" }
+      ],
+      "bangboo": "[Bangboo recomendado]"
+    }
+  },
   { "id": "miyabi", "nombre": "Hoshimi Miyabi", "rango": "s", "elemento": "hielo", "especialidad": "anomalia", "faccion": "Sección 6" },
   { "id": "jane", "nombre": "Jane Doe", "rango": "s", "elemento": "fisico", "especialidad": "anomalia", "faccion": "Criminal Investigation SRT" },
   { "id": "zhu_yuan", "nombre": "Zhu Yuan", "rango": "s", "elemento": "eter", "especialidad": "ataque", "faccion": "Criminal Investigation SRT" },
