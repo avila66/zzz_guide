@@ -1,8 +1,9 @@
-// PASO 2 · PERSONA A (datos)
+// PASO 2 · PERSONA A (datos) — actualizado en el PASO 3 (campo "guia")
 // El "modelo" de un agente: qué información tiene cada uno.
 import 'package:flutter/material.dart';
 
 import '../tema.dart';
+import 'guia_agente.dart';
 
 // "enum" = una lista cerrada de opciones. Así no podemos escribir mal
 // "Hielo" en un sitio y "hielo " en otro: solo existen estas.
@@ -48,6 +49,7 @@ class Agente {
     required this.elemento,
     required this.especialidad,
     required this.faccion,
+    this.guia, // PASO 3: opcional, no todos los agentes tienen guía todavía
   });
 
   final String id;
@@ -56,6 +58,7 @@ class Agente {
   final Elemento elemento;
   final Especialidad especialidad;
   final String faccion;
+  final GuiaAgente? guia; // "?" = puede ser null (sin guía)
 
   // "factory" = un constructor que crea el objeto a partir de otra cosa,
   // aquí a partir de un trozo del JSON (un Map con claves y valores).
@@ -68,6 +71,10 @@ class Agente {
       elemento: Elemento.values.byName(json['elemento'] as String),
       especialidad: Especialidad.values.byName(json['especialidad'] as String),
       faccion: json['faccion'] as String,
+      // Si el JSON trae "guia", la leemos; si no, se queda en null.
+      guia: json['guia'] == null
+          ? null
+          : GuiaAgente.fromJson(json['guia'] as Map<String, dynamic>),
     );
   }
 
