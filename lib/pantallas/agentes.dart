@@ -6,6 +6,7 @@ import '../datos/repositorio_agentes.dart';
 import '../modelos/agente.dart';
 import '../tema.dart';
 import '../widgets/tarjeta_agente.dart';
+import 'detalle_agente.dart';
 
 class PantallaAgentes extends StatefulWidget {
   const PantallaAgentes({super.key});
@@ -38,10 +39,13 @@ class _PantallaAgentesState extends State<PantallaAgentes> {
     }).toList();
   }
 
+  // PASO 3: abrir la ficha. Navigator.push pone una pantalla nueva ENCIMA
+  // de la actual; la flecha de atrás (o el gesto) la quita (pop).
   void _abrirFicha(Agente agente) {
-    // La ficha del agente la haremos en el paso 3.
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Ficha de ${agente.nombre}: próximamente')),
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => PantallaDetalleAgente(agente: agente),
+      ),
     );
   }
 
