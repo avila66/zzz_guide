@@ -1,6 +1,7 @@
 // La "carcasa" de la app: la barra de navegación de abajo y la pantalla activa.
 import 'package:flutter/material.dart';
 
+import 'agentes.dart';
 import 'inicio.dart';
 import 'proximamente.dart';
 
@@ -29,7 +30,7 @@ class _NavegacionState extends State<Navegacion> {
     // por sus pantallas de verdad en los siguientes pasos.
     final List<Widget> pantallas = [
       PantallaInicio(alCambiarPestana: _irA),
-      const PantallaProximamente(titulo: 'Agentes'),
+      const PantallaAgentes(), // PASO 2: ya es la pantalla de verdad
       const PantallaProximamente(titulo: 'Tier list'),
       const PantallaProximamente(titulo: 'Guías'),
     ];
