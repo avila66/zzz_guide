@@ -1,0 +1,20 @@
+[
+  { "id": "ellen", "nombre": "Ellen Joe", "rango": "s", "elemento": "hielo", "especialidad": "ataque", "faccion": "Victoria Housekeeping" },
+  { "id": "miyabi", "nombre": "Hoshimi Miyabi", "rango": "s", "elemento": "hielo", "especialidad": "anomalia", "faccion": "Sección 6" },
+  { "id": "jane", "nombre": "Jane Doe", "rango": "s", "elemento": "fisico", "especialidad": "anomalia", "faccion": "Criminal Investigation SRT" },
+  { "id": "zhu_yuan", "nombre": "Zhu Yuan", "rango": "s", "elemento": "eter", "especialidad": "ataque", "faccion": "Criminal Investigation SRT" },
+  { "id": "harumasa", "nombre": "Asaba Harumasa", "rango": "s", "elemento": "electrico", "especialidad": "ataque", "faccion": "Sección 6" },
+  { "id": "yanagi", "nombre": "Tsukishiro Yanagi", "rango": "s", "elemento": "electrico", "especialidad": "anomalia", "faccion": "Sección 6" },
+  { "id": "burnice", "nombre": "Burnice", "rango": "s", "elemento": "fuego", "especialidad": "anomalia", "faccion": "Sons of Calydon" },
+  { "id": "lighter", "nombre": "Lighter", "rango": "s", "elemento": "fuego", "especialidad": "aturdimiento", "faccion": "Sons of Calydon" },
+  { "id": "caesar", "nombre": "Caesar", "rango": "s", "elemento": "fisico", "especialidad": "defensa", "faccion": "Sons of Calydon" },
+  { "id": "qingyi", "nombre": "Qingyi", "rango": "s", "elemento": "electrico", "especialidad": "aturdimiento", "faccion": "Criminal Investigation SRT" },
+  { "id": "lycaon", "nombre": "Lycaon", "rango": "s", "elemento": "hielo", "especialidad": "aturdimiento", "faccion": "Victoria Housekeeping" },
+  { "id": "rina", "nombre": "Rina", "rango": "s", "elemento": "electrico", "especialidad": "apoyo", "faccion": "Victoria Housekeeping" },
+  { "id": "anby", "nombre": "Anby", "rango": "a", "elemento": "electrico", "especialidad": "aturdimiento", "faccion": "Cunning Hares" },
+  { "id": "nicole", "nombre": "Nicole", "rango": "a", "elemento": "eter", "especialidad": "apoyo", "faccion": "Cunning Hares" },
+  { "id": "billy", "nombre": "Billy", "rango": "a", "elemento": "fisico", "especialidad": "ataque", "faccion": "Cunning Hares" },
+  { "id": "soukaku", "nombre": "Soukaku", "rango": "a", "elemento": "hielo", "especialidad": "apoyo", "faccion": "Sección 6" },
+  { "id": "lucy", "nombre": "Lucy", "rango": "a", "elemento": "fuego", "especialidad": "apoyo", "faccion": "Sons of Calydon" },
+  { "id": "piper", "nombre": "Piper", "rango": "a", "elemento": "fisico", "especialidad": "anomalia", "faccion": "Sons of Calydon" }
+]
