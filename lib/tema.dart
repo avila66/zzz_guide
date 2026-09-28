@@ -20,6 +20,8 @@ class ColoresApp {
   static const Color electrico = Color(0xFF8FA8FF);
   static const Color eter = Color(0xFFFF6FAE);
   static const Color fisico = Color(0xFFF0C04A);
+  static const Color viento = Color(0xFF5FD3A6);   // PASO 5
+  static const Color lumiflux = Color(0xFFD6C8FF); // PASO 5
 }
 
 // El tema oscuro de toda la app.
