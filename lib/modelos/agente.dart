@@ -119,9 +119,18 @@ class Agente {
   // Devuelve null si trae algún código que todavía no conocemos,
   // así un agente "raro" no rompe toda la app.
   static Agente? desdeApi(String idApi, Map<String, dynamic> json) {
-    final rango = Rango.desdeCodigo(json['rank'] as int);
-    final elemento = Elemento.desdeCodigo(json['element'] as int);
-    final especialidad = Especialidad.desdeCodigo(json['type'] as int);
+    // "as int?" = puede venir un número o null (algunos personajes, como
+    // los protagonistas, no tienen rango ni elemento).
+    final codigoRango = json['rank'] as int?;
+    final codigoElemento = json['element'] as int?;
+    final codigoTipo = json['type'] as int?;
+    if (codigoRango == null || codigoElemento == null || codigoTipo == null) {
+      return null;
+    }
+
+    final rango = Rango.desdeCodigo(codigoRango);
+    final elemento = Elemento.desdeCodigo(codigoElemento);
+    final especialidad = Especialidad.desdeCodigo(codigoTipo);
     if (rango == null || elemento == null || especialidad == null) {
       return null;
     }
