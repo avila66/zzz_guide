@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../modelos/agente.dart';
 import '../modelos/guia_agente.dart';
 import '../tema.dart';
+import '../widgets/avatar_agente.dart';
 
 class PantallaDetalleAgente extends StatelessWidget {
   const PantallaDetalleAgente({super.key, required this.agente});
@@ -71,21 +72,8 @@ class _Cabecera extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(20, 8, 20, 20),
       child: Row(
         children: [
-          // Hueco para la imagen del agente (de momento, iniciales).
-          Container(
-            width: 88,
-            height: 88,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: const Color(0xFF24262B),
-              border: Border.all(color: color, width: 3),
-            ),
-            child: Text(
-              agente.iniciales,
-              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: color),
-            ),
-          ),
+          // PASO 4: foto del agente (o iniciales si aún no hay foto).
+          AvatarAgente(agente: agente, tamano: 88, grosorBorde: 3),
           const SizedBox(width: 16),
           Expanded(
             child: Column(

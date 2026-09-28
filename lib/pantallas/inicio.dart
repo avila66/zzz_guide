@@ -94,7 +94,7 @@ class PantallaInicio extends StatelessWidget {
             ),
             SizedBox(height: 2),
             Text(
-              'Hola, Proxy',
+              'En, Nah! (Sea serio ve)',
               style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
             ),
           ],

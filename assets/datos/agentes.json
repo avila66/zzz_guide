@@ -39,5 +39,6 @@
   { "id": "billy", "nombre": "Billy", "rango": "a", "elemento": "fisico", "especialidad": "ataque", "faccion": "Cunning Hares" },
   { "id": "soukaku", "nombre": "Soukaku", "rango": "a", "elemento": "hielo", "especialidad": "apoyo", "faccion": "Sección 6" },
   { "id": "lucy", "nombre": "Lucy", "rango": "a", "elemento": "fuego", "especialidad": "apoyo", "faccion": "Sons of Calydon" },
-  { "id": "piper", "nombre": "Piper", "rango": "a", "elemento": "fisico", "especialidad": "anomalia", "faccion": "Sons of Calydon" }
+  { "id": "piper", "nombre": "Piper", "rango": "a", "elemento": "fisico", "especialidad": "anomalia", "faccion": "Sons of Calydon" },
+  { "id": "norma", "nombre": "Norma", "rango": "s", "elemento": "fuego", "especialidad": "aturdimiento", "faccion": "External Strategy Department" }
 ]
