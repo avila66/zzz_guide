@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../modelos/agente.dart';
 import '../tema.dart';
+import 'avatar_agente.dart';
 
 class TarjetaAgente extends StatelessWidget {
   const TarjetaAgente({super.key, required this.agente, required this.alPulsar});
@@ -27,6 +28,7 @@ class TarjetaAgente extends StatelessWidget {
         // Stack = poner widgets unos ENCIMA de otros (la letra del rango
         // flota sobre la esquina de la tarjeta).
         child: Stack(
+          fit: StackFit.expand,
           children: [
             Positioned(
               top: 8,
@@ -45,25 +47,8 @@ class TarjetaAgente extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // Hueco para la imagen: de momento, un círculo con iniciales.
-                  Container(
-                    width: 60,
-                    height: 60,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: const Color(0xFF24262B),
-                      border: Border.all(color: colorElemento, width: 2),
-                    ),
-                    child: Text(
-                      agente.iniciales,
-                      style: TextStyle(
-                        color: colorElemento,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
-                      ),
-                    ),
-                  ),
+                  // PASO 4: foto del agente (o iniciales si aún no hay foto).
+                  AvatarAgente(agente: agente, tamano: 60),
                   const SizedBox(height: 8),
                   Text(
                     agente.nombre,
