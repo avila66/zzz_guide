@@ -84,6 +84,7 @@ class Agente {
     required this.faccion,
     this.guia,  // PASO 3: opcional, no todos los agentes tienen guía todavía
     this.idApi, // PASO 5: el número del agente en la API (ej: Ellen = 1191)
+    this.urlImagen, // PASO 6: icono del agente en internet (puede ser null)
   });
 
   final String id;
@@ -94,6 +95,7 @@ class Agente {
   final String faccion;
   final GuiaAgente? guia; // "?" = puede ser null (sin guía)
   final int? idApi;
+  final String? urlImagen;
 
   // "factory" = un constructor que crea el objeto a partir de otra cosa,
   // aquí a partir de un trozo del JSON (un Map con claves y valores).
@@ -138,7 +140,12 @@ class Agente {
     // "??" = si lo de la izquierda es null, usa lo de la derecha.
     final nombre = (json['EN'] ?? json['code']) as String;
 
+    // PASO 6: la API manda el nombre del icono ("icon": "IconRole21") y la
+    // imagen está en: https://static.nanoka.cc/assets/zzz/IconRole21.webp
+    final icono = json['icon'] as String?;
+
     return Agente(
+      urlImagen: icono == null ? null : '$urlImagenesApi/$icono.webp',
       id: crearId(nombre),
       nombre: nombre,
       rango: rango,
@@ -162,6 +169,7 @@ class Agente {
       faccion: faccion,
       guia: local.guia,
       idApi: idApi,
+      urlImagen: urlImagen, // PASO 6: la imagen de internet la conservamos
     );
   }
 
