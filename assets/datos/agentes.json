@@ -40,5 +40,8 @@
   { "id": "soukaku", "nombre": "Soukaku", "rango": "a", "elemento": "hielo", "especialidad": "apoyo", "faccion": "Sección 6" },
   { "id": "lucy", "nombre": "Lucy", "rango": "a", "elemento": "fuego", "especialidad": "apoyo", "faccion": "Sons of Calydon" },
   { "id": "piper", "nombre": "Piper", "rango": "a", "elemento": "fisico", "especialidad": "anomalia", "faccion": "Sons of Calydon" },
-  { "id": "norma", "nombre": "Norma", "rango": "s", "elemento": "fuego", "especialidad": "aturdimiento", "faccion": "External Strategy Department" }
+  { "id": "norma", "nombre": "Norma", "rango": "s", "elemento": "fuego", "especialidad": "aturdimiento", "faccion": "External Strategy Department" },
+  { "id": "nangongyu", "nombre": "Nangong Yu", "rango": "s", "elemento": "eter", "especialidad": "aturdimiento", "faccion": "Angels of Delusion" },
+  { "id": "astra", "nombre": "Astra Yao", "rango": "s", "elemento": "eter", "especialidad": "apoyo", "faccion": "Stars of Lyra" },
+  { "id": "yinhu", "nombre": "Pan Yinhu", "rango": "a", "elemento": "fisico", "especialidad": "defensa", "faccion": "Yunkui Summit" }
 ]
