@@ -1,0 +1,22 @@
+{
+  "_nota": "EJEMPLO para probar la pantalla. No es un ranking real: poned vuestra propia clasificación. Los agentes se escriben con su id (el mismo que el nombre de su imagen).",
+  "modos": [
+    {
+      "nombre": "Shiyu Defense",
+      "niveles": [
+        { "nivel": "T0", "agentes": ["miyabi", "ellen", "zhu_yuan"] },
+        { "nivel": "T1", "agentes": ["jane", "yanagi", "harumasa", "lighter", "caesar"] },
+        { "nivel": "T2", "agentes": ["burnice", "qingyi", "lycaon", "rina"] },
+        { "nivel": "T3", "agentes": ["anby", "nicole", "billy", "soukaku", "lucy", "piper"] }
+      ]
+    },
+    {
+      "nombre": "Deadly Assault",
+      "niveles": [
+        { "nivel": "T0", "agentes": ["ellen", "miyabi"] },
+        { "nivel": "T1", "agentes": ["zhu_yuan", "harumasa", "yanagi"] },
+        { "nivel": "T2", "agentes": ["jane", "burnice", "caesar", "lighter"] }
+      ]
+    }
+  ]
+}
