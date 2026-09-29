@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'agentes.dart';
 import 'inicio.dart';
 import 'proximamente.dart';
+import 'tier_list.dart';
 
 // StatefulWidget = un widget que SÍ cambia: aquí, la pestaña seleccionada.
 class Navegacion extends StatefulWidget {
@@ -31,7 +32,7 @@ class _NavegacionState extends State<Navegacion> {
     final List<Widget> pantallas = [
       PantallaInicio(alCambiarPestana: _irA),
       const PantallaAgentes(), // PASO 2: ya es la pantalla de verdad
-      const PantallaProximamente(titulo: 'Tier list'),
+      const PantallaTierList(), // PASO 7
       const PantallaProximamente(titulo: 'Guías'),
     ];
 

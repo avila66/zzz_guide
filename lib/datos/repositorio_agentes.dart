@@ -25,7 +25,16 @@ class RepositorioAgentes {
   //   2. zzz/<versión>/character.json -> la lista de agentes de esa versión
   static const String _urlBase = 'https://static.nanoka.cc';
 
-  static Future<List<Agente>> cargar() async {
+  // PASO 7: "caché". Guardamos la carga la primera vez que alguien la pide.
+  // Así, si Agentes y Tier list llaman los dos a cargar(), solo se descarga
+  // UNA vez de internet. "??=" = "si es null, asígnale esto".
+  static Future<List<Agente>>? _cache;
+
+  static Future<List<Agente>> cargar() {
+    return _cache ??= _cargarSinCache();
+  }
+
+  static Future<List<Agente>> _cargarSinCache() async {
     final locales = await _cargarLocales();
 
     // try / catch = "intenta esto, y si algo sale mal, haz esto otro"
