@@ -4,6 +4,9 @@
 // Si sale un agente con facción "Desconocida", es que la API ha añadido
 // un número nuevo: basta con añadirlo aquí.
 
+// PASO 6: carpeta de la API donde están las imágenes de ZZZ.
+const String urlImagenesApi = 'https://static.nanoka.cc/assets/zzz';
+
 const Map<int, String> faccionesApi = {
   1: 'Cunning Hares',
   2: 'Victoria Housekeeping',
